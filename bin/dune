@@ -1,0 +1,14 @@
+(executable
+ (public_name arxiv_browser)
+ (name main)
+ (libraries
+  core
+  core_unix.command_unix
+  core_unix.time_float_unix
+  async
+  cohttp-async
+  syndic
+  notty
+  notty_async)
+ (preprocess
+  (pps ppx_jane ppx_deriving.show)))
